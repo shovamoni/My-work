@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student object</title>
+</head>
+<body>
+    <p id="m">
+
+    </p>
+    <p id="s">
+
+    </p>
+    <p id="p"></p>
+    <p id="t"></p>
+    <p id="o"></p>
+    <script>
+         
+        const student1={
+            name:'Mihika',
+            age:18,
+            height:5.2,
+            weight:'55kg',
+           
+        };
+
+        document.getElementById('m').innerHTML='(1)'+'  '+'Name:'+student1.name + '<br> ' +
+         'Age:'+student1.age + 'years old'+ '<br> '+'Hight:'+student1.height +'<br> '+'Weight:'+ student1.weight;
+
+      function student(name,age,height,weight){
+       this.a=name;
+        this.b=age;
+        this.c=height;
+        this.d=weight;
+
+        this.abc= function(){
+           let x= this.a+' '+ this.b+' '+this.c+' '+this.d;
+           return x;
+        }
+      };
+      let student2 = new student('Sraddha',23,5,'56kg');
+      let x = '(2)'+' '+'Name:'+ student2.a+'<br> '+'Age:'+ student2.b+'<br> '+ 'Hight:'+ student2.c+'<br>'+'Weight:'+student2.d;
+      document.getElementById('s').innerHTML=x;
+
+      function student(name,age,height,weight){
+       this.a=name;
+        this.b=age;
+        this.c=height;
+        this.d=weight;
+
+        this.abc= function(){
+           let y= this.a+' '+ this.b+' '+this.c+' '+this.d;
+           return y;
+        }
+      };
+      let student3 = new student('Asika',23,4.8,'52kg');
+      let y = '(3)'+' '+'Name:'+ student3.a+'<br> '+'Age:'+ student3.b+'<br> '+ 'Hight:'+ student3.c+'<br>'+'Weight:'+student3.d;
+      document.getElementById('p').innerHTML=y;
+
+
+      function student(name,age,height,weight){
+       this.a=name;
+        this.b=age;
+        this.c=height;
+        this.d=weight;
+
+        this.abc= function(){
+           let z= this.a+' '+ this.b+' '+this.c+' '+this.d;
+           return z;
+        }
+      };
+      let student4 = new student('Khusbu',22,5.4,'56kg');
+      let z = '(4)'+' '+'Name:'+ student4.a+'<br> '+'Age:'+ student4.b+'<br> '+ 'Hight:'+ student4.c+'<br>'+'Weight:'+student4.d;
+      document.getElementById('t').innerHTML=z;
+       
+      function student(name,age,height,weight){
+       this.a=name;
+        this.b=age;
+        this.c=height;
+        this.d=weight;
+
+        this.abc= function(){
+           let z= this.a+' '+ this.b+' '+this.c+' '+this.d;
+           return k;
+        }
+      };
+      let student5 = new student('Shova',23,5,'54kg');
+      let k = '(5)'+' '+'Name:'+ student5.a+'<br> '+'Age:'+ student5.b+'<br> '+ 'Hight:'+ student5.c+'<br>'+'Weight:'+student5.d;
+      document.getElementById('o').innerHTML=k;
+
+      
+
+    </script>
+</body>
+</html>
